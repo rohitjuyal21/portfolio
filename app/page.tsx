@@ -8,7 +8,7 @@ import WorkExperience from "@/components/WorkExperience";
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-4 sm:space-y-8">
       <Header />
       <TopSection />
       <AboutMe />

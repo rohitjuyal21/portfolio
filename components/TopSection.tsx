@@ -6,7 +6,7 @@ import ParallelLines from "./ui/parallel-lines";
 
 export default function TopSection() {
   return (
-    <div className="flex gap-6 items-center">
+    <div className="flex sm:flex-row flex-col gap-4 sm:gap-6 sm:items-center">
       <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-full overflow-hidden">
         <Image
           src="/me.png"
@@ -23,7 +23,7 @@ export default function TopSection() {
         <p className="sm:text-xl font-bold text-muted-foreground">
           I&apos;m a Frontend Developer
         </p>
-        <ul className="flex gap-2 flex-wrap pt-2">
+        <ul className="flex gap-2 flex-wrap sm:pt-2">
           {SOCIAL_LINKS.map((link, index) => (
             <li key={index}>
               <Link href={link.url} target="_blank">
@@ -35,7 +35,9 @@ export default function TopSection() {
                       width={20}
                       height={20}
                     />
-                    <span className="font-medium text-sm">{link.name}</span>
+                    <span className="font-medium text-xs sm:text-sm">
+                      {link.name}
+                    </span>
                   </div>
                 </ParallelLines>
               </Link>
