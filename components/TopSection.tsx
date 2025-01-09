@@ -23,18 +23,15 @@ export default function TopSection() {
         <p className="sm:text-xl font-bold text-muted-foreground">
           I&apos;m a Frontend Developer
         </p>
-        <ul className="flex gap-2 flex-wrap sm:pt-2">
+        <ul className="flex gap-1 sm:gap-2 flex-wrap pt-1 sm:pt-2">
           {SOCIAL_LINKS.map((link, index) => (
             <li key={index}>
               <Link href={link.url} target="_blank">
                 <ParallelLines>
                   <div className="flex gap-1 items-center p-1">
-                    <Image
-                      src={link.icon}
-                      alt={link.name}
-                      width={20}
-                      height={20}
-                    />
+                    <div className="relative sm:size-5 size-4">
+                      <Image src={link.icon} alt={link.name} fill />
+                    </div>
                     <span className="font-medium text-xs sm:text-sm">
                       {link.name}
                     </span>

@@ -58,9 +58,9 @@ export default function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-16 h-4.5 overflow-hidden group bg-foreground text-background relative"
+                        className="w-16 h-5 overflow-hidden group bg-foreground text-background relative"
                       >
-                        <span className="flex gap-1 px-1.5  justify-center items-center text-[10px] font-medium absolute inset-0 translate-x-0 group-hover:translate-x-full transition-all duration-300">
+                        <span className="flex gap-1 px-1.5 justify-center items-center text-[10px] font-medium absolute inset-0 translate-x-0 group-hover:translate-x-full transition-all duration-300">
                           <SiGithub size={12} /> Source
                         </span>
                         <span className="flex gap-1 px-1.5 justify-center items-center text-[10px] font-medium absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-all duration-300">
