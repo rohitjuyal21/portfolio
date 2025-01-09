@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="space-y-1">
+    <div className="space-y-2">
       <h4 className="font-semibold text-lg">About me</h4>
       <p className="text-sm text-muted-foreground">
         I am a self-taught frontend developer with 1 year of experience in

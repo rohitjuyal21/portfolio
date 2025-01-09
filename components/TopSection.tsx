@@ -32,8 +32,8 @@ export default function TopSection() {
                     <Image
                       src={link.icon}
                       alt={link.name}
-                      width={16}
-                      height={16}
+                      width={20}
+                      height={20}
                     />
                     <span className="font-medium text-sm">{link.name}</span>
                   </div>
