@@ -20,10 +20,10 @@ export default function TopSection() {
         <h1 className="text-3xl sm:text-5xl font-bold">
           Hi, I&apos;m <span className="text-sky-500">Rohit</span>
         </h1>
-        <p className="sm:text-xl font-bold text-muted-foreground">
+        <p className="sm:text-lg font-bold text-muted-foreground">
           I&apos;m a Frontend Developer
         </p>
-        <ul className="flex gap-1 sm:gap-2 flex-wrap pt-1 sm:pt-2">
+        <ul className="flex gap-1 sm:gap-2 flex-wrap pt-1 ">
           {SOCIAL_LINKS.map((link, index) => (
             <li key={index}>
               <Link href={link.url} target="_blank">
