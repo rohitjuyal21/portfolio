@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -28,6 +29,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="max-w-2xl mx-auto p-6">{children}</main>
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
