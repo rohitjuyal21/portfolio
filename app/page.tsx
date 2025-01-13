@@ -12,17 +12,23 @@ export default function Home() {
     <div className="space-y-4 sm:space-y-8">
       <Animate>
         <Header />
-        <TopSection />
       </Animate>
       <Animate delay={0.2}>
-        <AboutMe />
+        <TopSection />
       </Animate>
       <Animate delay={0.4}>
-        <WorkExperience />
-        <Skills />
+        <AboutMe />
       </Animate>
       <Animate delay={0.6}>
+        <WorkExperience />
+      </Animate>
+      <Animate delay={0.8}>
+        <Skills />
+      </Animate>
+      <Animate delay={1}>
         <Projects />
+      </Animate>
+      <Animate delay={1.2}>
         <Footer />
       </Animate>
     </div>
