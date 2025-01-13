@@ -1,12 +1,14 @@
 "use client";
 import { useTheme } from "next-themes";
 import { RxMoon, RxSun } from "react-icons/rx";
+import Face from "./Face";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="flex justify-end">
+    <header className="flex justify-between items-center ">
+      <Face />
       <div>
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
