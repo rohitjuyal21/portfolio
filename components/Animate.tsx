@@ -4,9 +4,14 @@ import { motion } from "framer-motion";
 interface AnimateProps {
   children: React.ReactNode;
   delay?: number;
+  classname?: string;
 }
 
-export default function Animate({ children, delay = 0 }: AnimateProps) {
+export default function Animate({
+  children,
+  delay = 0,
+  classname,
+}: AnimateProps) {
   return (
     <motion.div
       initial={{ height: 0, opacity: 0, y: 10, filter: "blur(10px)" }}
@@ -16,6 +21,7 @@ export default function Animate({ children, delay = 0 }: AnimateProps) {
         opacity: 0,
       }}
       transition={{ duration: 0.5, delay }}
+      className={classname}
     >
       {children}
     </motion.div>

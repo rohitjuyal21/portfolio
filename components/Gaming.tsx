@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Gaming() {
   return (
-    <div className="space-y-4 sm:space-y-8">
+    <div className="space-y-4 sm:space-y-8 flex flex-col flex-1 w-full">
       <h1 className="text-2xl sm:text-3xl font-bold">
         Choose a game and have fun!
       </h1>
@@ -22,6 +22,9 @@ export default function Gaming() {
             </div>
           </div>
         </Link>
+      </div>
+      <div className="text-sm text-muted-foreground flex-1 text-center flex items-center justify-center">
+        Will try to add more games...
       </div>
     </div>
   );

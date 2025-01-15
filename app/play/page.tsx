@@ -6,7 +6,7 @@ import React from "react";
 export default function page() {
   return (
     <div className="flex flex-1 flex-col items-start justify-start w-full">
-      <Animate>
+      <Animate classname="w-full flex flex-col flex-1">
         <Gaming />
       </Animate>
     </div>
