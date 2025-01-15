@@ -28,7 +28,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="max-w-2xl mx-auto p-6">{children}</main>
+          <main className="max-w-2xl mx-auto p-6 min-h-screen flex flex-col">
+            {children}
+          </main>
           <Analytics />
         </ThemeProvider>
       </body>
