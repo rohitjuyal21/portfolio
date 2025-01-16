@@ -190,3 +190,19 @@ export const FOOTER_NAV = [
     icon: FaXTwitter,
   },
 ];
+
+
+export const GAMES = [
+  {
+    name: "Tic Tac Toe",
+    link: "tic-tac-toe",
+    thumbnail: "/games/tic-tac-toe.png",
+    description: "Play the classic game of Tic Tac Toe against the computer.",
+  }, 
+  {
+    name:"Tenzies",
+    link:"tenzies",
+    thumbnail:"/games/tenzies.png",
+    description:"Play the game of Tenzies and try to get all the dice to the same number in the least number of rolls."
+  }
+]
