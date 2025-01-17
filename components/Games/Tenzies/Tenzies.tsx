@@ -10,6 +10,7 @@ export default function Tenzies() {
   const [rollsCount, setRollsCount] = useState(0);
   const [tenzies, setTenzies] = useState(false);
   const [isWinDialogOpen, setIsWinDialogOpen] = useState(false);
+  const [isRolling, setIsRolling] = useState(false);
 
   function generateNewDice() {
     const newDice = [];
@@ -32,21 +33,30 @@ export default function Tenzies() {
   };
 
   const handleRollDice = () => {
+    if (isRolling) return;
     if (tenzies) {
       setDice(generateNewDice());
       setRollsCount(0);
       setTenzies(false);
     } else {
-      setDice((prevDice) =>
-        prevDice.map((dice) =>
-          dice.isSelected
-            ? dice
-            : { ...dice, value: Math.ceil(Math.random() * 6) }
-        )
-      );
+      setIsRolling(true);
+
+      setTimeout(() => {
+        setIsRolling(false);
+        setDice((prevDice) =>
+          prevDice.map((dice) =>
+            dice.isSelected
+              ? dice
+              : { ...dice, value: Math.ceil(Math.random() * 6) }
+          )
+        );
+      }, 1000);
+
       setRollsCount((prevCount) => prevCount + 1);
     }
   };
+
+  console.log(isRolling);
 
   useEffect(() => {
     const allSelected = dice.every((dice) => dice.isSelected);
@@ -103,6 +113,7 @@ export default function Tenzies() {
               handleSelectDice(dice.id);
             }}
             isSelected={dice.isSelected}
+            isRolling={isRolling}
           />
         ))}
       </div>
