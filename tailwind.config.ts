@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         oswald: ["var(--font-oswald)"],
+        pressStart: ["var(--font-press-start)"],
       },
       colors: {
         background: "hsl(var(--background))",
@@ -55,11 +56,19 @@ export default {
       },
       animation: {
         rotate: "rotate 2.5s linear infinite",
+        shake: "shake 0.5s ease-in-out",
       },
       keyframes: {
         rotate: {
           "0%": { transform: "rotate(0deg) scale(10)" },
           "100%": { transform: "rotate(-360deg) scale(10)" },
+        },
+        shake: {
+          "0%": { transform: "translateX(0)" },
+          "25%": { transform: "translateX(-10px)" },
+          "50%": { transform: "translateX(10px)" },
+          "75%": { transform: "translateX(-10px)" },
+          "100%": { transform: "translateX(0)" },
         },
       },
     },

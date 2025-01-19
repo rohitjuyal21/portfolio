@@ -11,16 +11,21 @@ export default function Gaming() {
       </h1>
       <div className="flex flex-wrap gap-4">
         {GAMES.map((game, index) => (
-          <Link key={index} href={`/play/${game.link}`} className="group">
-            <div className="flex flex-col h-full gap-2 p-[1.5px] items-center relative overflow-hidden before:absolute before:-inset-8 before:-z-10 before:bg-[conic-gradient(var(--tw-gradient-stops))] before:from-sky-500 before:to-transparent before:to-20%  group-hover:before:animate-rotate before:opacity-0 group-hover:before:opacity-100">
-              <div className="p-3 bg-background flex flex-col  justify-between items-center gap-2 z-10 relative border before:absolute before:inset-0 before:bg-muted/30 w-28 h-full">
+          <Link
+            key={index}
+            href={`/play/${game.link}`}
+            className="group"
+            title={game.name}
+          >
+            <div className="flex flex-col h-full p-[1.5px] items-center relative overflow-hidden before:absolute before:-inset-8 before:-z-10 before:bg-[conic-gradient(var(--tw-gradient-stops))] before:from-sky-500 before:to-transparent before:to-20%  group-hover:before:animate-rotate before:opacity-0 group-hover:before:opacity-100">
+              <div className="p-3 pb-2 bg-background flex flex-col  justify-between items-center gap-2 z-10 relative border before:absolute before:inset-0 before:bg-muted/30 w-28 h-full">
                 <Image
                   src={game.thumbnail}
                   alt="Tic Tac Toe"
                   width={56}
                   height={56}
                 />
-                <p className="text-xs text-center">{game.name}</p>
+                <p className="text-xs text-center line-clamp-2">{game.name}</p>
               </div>
             </div>
           </Link>
