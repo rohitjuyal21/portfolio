@@ -56,7 +56,7 @@ export default {
       },
       animation: {
         rotate: "rotate 2.5s linear infinite",
-        shake: "shake 0.5s ease-in-out",
+        shake: "shake 1.5s infinite ease-in-out",
       },
       keyframes: {
         rotate: {
@@ -64,11 +64,15 @@ export default {
           "100%": { transform: "rotate(-360deg) scale(10)" },
         },
         shake: {
-          "0%": { transform: "translateX(0)" },
-          "25%": { transform: "translateX(-10px)" },
-          "50%": { transform: "translateX(10px)" },
-          "75%": { transform: "translateX(-10px)" },
-          "100%": { transform: "translateX(0)" },
+          "0%": { transform: "translateX(0) rotate(10deg)" },
+          "12.5%": { transform: "translateX(-10px) rotate(-10deg)" },
+          "25%": { transform: "translateX(10px) rotate(10deg)" },
+          "37.5%": { transform: "translateX(-10px) rotate(-10deg)" },
+          "50%": { transform: "translateX(10px) rotate(10deg)" },
+          "62.5%": { transform: "translateX(-10px) rotate(-10deg)" },
+          "75%": { transform: "translateX(10px) rotate(10deg)" },
+          "87.5%": { transform: "translateX(-10px) rotate(-10deg)" },
+          "100%": { transform: "translateX(0) rotate(10deg)" },
         },
       },
     },
