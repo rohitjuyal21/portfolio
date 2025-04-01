@@ -54,7 +54,7 @@ export const WORK_EXPERIENCE = [
     description:
       "Worked on multiple projects, maintaining the frontend and ensuring they look visually appealing. Utilized technologies such as Next.js, React, TypeScript, Tailwind CSS, Shadcn, and Material UI to build and enhance user interfaces.",
     startDate: "Feb 2024",
-    endDate: "Jan 2024",
+    endDate: "Jan 2025",
     icon: "/work/kinlotech.svg",
   },
   {
