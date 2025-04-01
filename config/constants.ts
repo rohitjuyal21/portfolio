@@ -16,8 +16,9 @@ import {
   SiCss3,
   SiLinkedin,
   SiPeerlist,
+  SiNuxtdotjs,
 } from "react-icons/si";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaVuejs, FaXTwitter } from "react-icons/fa6";
 
 export const SOCIAL_LINKS = [
   {
@@ -39,12 +40,21 @@ export const SOCIAL_LINKS = [
 
 export const WORK_EXPERIENCE = [
   {
+    company: "Procedure Technologies",
+    role: "SDE1",
+    description:
+      "Working as a frontend developer. Currently working on a project using Vue.js/Nuxt.",
+    startDate: "Feb 2025",
+    endDate: "Present",
+    icon: "/work/procedure.png",
+  },
+  {
     company: "Kinlotech IT solution",
     role: "Frontend Developer",
     description:
       "Worked on multiple projects, maintaining the frontend and ensuring they look visually appealing. Utilized technologies such as Next.js, React, TypeScript, Tailwind CSS, Shadcn, and Material UI to build and enhance user interfaces.",
     startDate: "Feb 2024",
-    endDate: "Present",
+    endDate: "Jan 2024",
     icon: "/work/kinlotech.svg",
   },
   {
@@ -67,8 +77,16 @@ export const SKILLS = [
     icon: SiCss3,
   },
   {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+  },
+  {
     name: "JavaScript",
     icon: SiJavascript,
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
   },
   {
     name: "React",
@@ -79,13 +97,14 @@ export const SKILLS = [
     icon: SiNextdotjs,
   },
   {
-    name: "TypeScript",
-    icon: SiTypescript,
+    name: "Vue.js",
+    icon: FaVuejs,
   },
   {
-    name: "Tailwind CSS",
-    icon: SiTailwindcss,
+    name: "Nuxt",
+    icon: SiNuxtdotjs,
   },
+
   {
     name: "Node.js",
     icon: SiNodedotjs,
