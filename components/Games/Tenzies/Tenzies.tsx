@@ -56,8 +56,6 @@ export default function Tenzies() {
     }
   };
 
-  console.log(isRolling);
-
   useEffect(() => {
     const allSelected = dice.every((dice) => dice.isSelected);
     const firstValue = dice[0].value;
