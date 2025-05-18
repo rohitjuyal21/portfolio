@@ -22,7 +22,7 @@ import ReactMarkdown from "react-markdown";
 import TypingAnimation from "./TypingAnimation";
 
 export default function ChatBot() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [chatHistory, setChatHistory] = useState<
