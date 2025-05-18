@@ -2,7 +2,10 @@ import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateText } from "ai";
 import { promises as fs } from "fs";
 
-const file = await fs.readFile(process.cwd() + "/data/about-me.md", "utf8");
+const file = await fs.readFile(
+  process.cwd() + "/public/data/about-me.md",
+  "utf8"
+);
 
 const google = createGoogleGenerativeAI({
   apiKey: process.env.GEMINI_API_KEY,

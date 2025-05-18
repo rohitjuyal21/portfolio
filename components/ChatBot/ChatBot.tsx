@@ -109,7 +109,7 @@ export default function ChatBot() {
             <div className="p-4 bg-muted/10 border-b">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="w-14 h-14 rounded-full overflow-hidden">
+                  <div className="w-10 h-10 rounded-full overflow-hidden">
                     <Image
                       src="/me.png"
                       alt="me"
@@ -119,10 +119,7 @@ export default function ChatBot() {
                     />
                   </div>
                   <div>
-                    <h1 className="text-lg font-bold">Chat with me</h1>
-                    <p className="text-sm text-muted-foreground">
-                      I&apos;m a Frontend Developer
-                    </p>
+                    <h1 className="text-base font-bold">Chat with me</h1>
                   </div>
                 </div>
                 <Button
@@ -146,6 +143,7 @@ export default function ChatBot() {
                           alt="me"
                           width={200}
                           height={200}
+                          className="object-cover  translate-y-2 w-full h-full scale-150"
                         />
                       </div>
                       <div className="text-xs border bg-muted/10 rounded-r-2xl rounded-bl-2xl p-2">
