@@ -77,8 +77,7 @@ export default function ChatBot() {
       ...chatHistory,
       {
         role: "assistant",
-        content:
-          "Hi there! 👋 I'm Rohit's virtual assistant. I can tell you about Rohit's experience, projects, skills, or anything else you'd like to know. How can I help you today?",
+        content: "Hey 👋, you found me! I'm Rohit — what do you want to know?",
       },
     ]);
   }, []);
