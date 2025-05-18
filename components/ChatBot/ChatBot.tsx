@@ -195,6 +195,7 @@ export default function ChatBot() {
                 <Input
                   placeholder="Type your message here..."
                   className="bg-background h-10 rounded-full"
+                  autoFocus
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />

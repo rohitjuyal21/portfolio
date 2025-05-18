@@ -55,13 +55,7 @@ function Face() {
         ></div>
       </div>
       <div className="absolute group-hover:top-1 -top-4 transition-all duration-300">
-        <Image
-          src="/thug.png"
-          alt="thug"
-          width={100}
-          height={100}
-          objectFit="cover"
-        />
+        <Image src="/thug.png" alt="thug" width={100} height={100} />
       </div>
     </div>
   );

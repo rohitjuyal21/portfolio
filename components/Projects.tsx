@@ -22,6 +22,7 @@ export default function Projects() {
                     src={project.logo}
                     alt={project.name}
                     fill
+                    sizes="100%"
                     className="w-full h-full object-cover"
                   />
                 </div>

@@ -30,7 +30,12 @@ export default function TopSection() {
                 <ParallelLines>
                   <div className="flex gap-1 items-center p-1">
                     <div className="relative sm:size-5 size-4">
-                      <Image src={link.icon} alt={link.name} fill />
+                      <Image
+                        src={link.icon}
+                        alt={link.name}
+                        fill
+                        sizes="100%"
+                      />
                     </div>
                     <span className="font-medium text-xs sm:text-sm">
                       {link.name}
