@@ -50,7 +50,10 @@ export default function ChatBot() {
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({
+          message,
+          chatHistory: chatHistory.slice(-5),
+        }),
       });
       if (!response.ok) {
         throw new Error("Failed to fetch");
