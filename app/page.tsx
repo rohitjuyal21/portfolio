@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Animate from "@/components/Animate";
+import ChatBot from "@/components/ChatBot/ChatBot";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
@@ -31,6 +32,7 @@ export default function Home() {
       <Animate delay={1.2}>
         <Footer />
       </Animate>
+      <ChatBot />
     </div>
   );
 }
