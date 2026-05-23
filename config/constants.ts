@@ -13,12 +13,11 @@ import {
   SiShadcnui,
   SiPostman,
   SiHtml5,
-  SiCss3,
-  SiLinkedin,
   SiPeerlist,
-  SiNuxtdotjs,
+  SiNuxt,
 } from "react-icons/si";
 import { FaVuejs, FaXTwitter } from "react-icons/fa6";
+import { IoLogoCss3, IoLogoLinkedin } from "react-icons/io5";
 
 export const SOCIAL_LINKS = [
   {
@@ -74,7 +73,7 @@ export const SKILLS = [
   },
   {
     name: "CSS",
-    icon: SiCss3,
+    icon: IoLogoCss3,
   },
   {
     name: "Tailwind CSS",
@@ -102,7 +101,7 @@ export const SKILLS = [
   },
   {
     name: "Nuxt",
-    icon: SiNuxtdotjs,
+    icon: SiNuxt,
   },
 
   {
@@ -201,7 +200,7 @@ export const FOOTER_NAV = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/rohitjuyal2003",
-    icon: SiLinkedin,
+    icon: IoLogoLinkedin,
   },
   {
     name: "Twitter",

@@ -38,13 +38,16 @@ export default function ChatBot() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setChatHistory((prev) => [
-      ...prev,
+    if (!message) return;
+
+    const newHistory = [
+      ...chatHistory,
       {
         role: "user",
         content: message,
       },
-    ]);
+    ];
+    setChatHistory(newHistory);
     setMessage("");
     setIsLoading(true);
     try {
@@ -52,7 +55,7 @@ export default function ChatBot() {
         method: "POST",
         body: JSON.stringify({
           message,
-          chatHistory: chatHistory.slice(-5),
+          chatHistory: newHistory.slice(-10),
         }),
       });
       if (!response.ok) {
@@ -148,7 +151,7 @@ export default function ChatBot() {
                           className="object-cover  translate-y-2 w-full h-full scale-150"
                         />
                       </div>
-                      <div className="text-xs border bg-muted/10 rounded-r-2xl rounded-bl-2xl p-2">
+                      <div className="text-xs border bg-muted/10 rounded-r-2xl rounded-bl-2xl py-2 px-4 max-w-[80%]">
                         <ReactMarkdown
                           components={{
                             a: ({ children, href }) => (
@@ -168,7 +171,7 @@ export default function ChatBot() {
                     </div>
                   ) : (
                     <div className="flex gap-2 justify-end">
-                      <div className="text-xs border-transparent bg-muted rounded-l-2xl rounded-br-2xl p-2">
+                      <div className="text-xs border-transparent bg-muted rounded-l-2xl rounded-br-2xl py-2 px-4 max-w-[80%]">
                         {message.content}
                       </div>
                       <div className="w-8 h-8 rounded-full overflow-hidden shrink-0 bg-muted flex items-center justify-center border">
