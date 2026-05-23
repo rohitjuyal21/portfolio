@@ -1,9 +1,12 @@
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { generateText } from "ai";
 import { createOpenRouter } from "@openrouter/ai-sdk-provider";
+import fs from "fs/promises";
+import path from "path";
 
-const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/about-me.md`);
-const file = await res.text();
+const filePath = path.join(process.cwd(), "public/data/about-me.md");
+
+const file = await fs.readFile(filePath, "utf8");
 
 const fallbackMessages = [
   "Sorry 😭 I hit my free-tier limit. Try again in a few seconds.",
