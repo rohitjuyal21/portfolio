@@ -1,6 +1,6 @@
 ## 👋 About Me
 
-I am Rohit. My Full name is Rohit Juyal. I'm a **22-year-old self-taught frontend developer**, currently living in **Gurgaon**, with over **1 year of experience** in building user-friendly and visually appealing websites. I enjoy turning ideas into real, working products that people can use and enjoy.
+I am Rohit. My Full name is Rohit Juyal. I'm a **23-year-old self-taught frontend developer**, currently living in **Gurgaon**, with over **1 year of experience** in building user-friendly and visually appealing websites. I enjoy turning ideas into real, working products that people can use and enjoy.
 
 I’m always curious and driven to explore new technologies, take on creative challenges, and bring fresh ideas to life. What excites me most is watching an idea grow into a finished product—from design to code.
 
@@ -14,10 +14,10 @@ Whether it's through frontend development, AI experiments, or visual design, I'm
 
 ## 💼 Work Experience
 
-### 🏢 Procedure Technologies — _SDE1_
+### 🏢 Procedure Technologies — _SDE 1_
 
 **Feb 2025 – Present**  
-Working as a frontend developer
+Working on both frontend and backend development, building scalable web applications and internal tools using modern technologies.
 
 ### 🏢 Kinlotech IT Solutions — _Frontend Developer_
 
