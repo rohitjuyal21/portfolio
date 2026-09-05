@@ -95,7 +95,7 @@ export default function ChatBot() {
           <Button
             variant="secondary"
             size="icon"
-            className="fixed bottom-4 right-4 [&_svg]:size-5 h-10 w-10"
+            className="fixed bottom-20 md:bottom-4 right-4 [&_svg]:size-5 h-10 w-10"
           >
             <ChatCircleDotsIcon />
           </Button>
