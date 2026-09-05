@@ -6,13 +6,10 @@ import { BiCopyright } from "react-icons/bi";
 function Footer() {
   return (
     <footer className="flex justify-between items-center pt-16">
-      <Link
-        href="/"
-        className="text-sm flex gap-1 items-center font-medium text-muted-foreground"
-      >
+      <span className="text-sm flex gap-1 items-center font-medium text-muted-foreground">
         <BiCopyright />
         Rohit
-      </Link>
+      </span>
       <div className="flex gap-3">
         {FOOTER_NAV.map((link) => (
           <Link

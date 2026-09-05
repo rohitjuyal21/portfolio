@@ -95,9 +95,9 @@ export default function ChatBot() {
           <Button
             variant="secondary"
             size="icon"
-            className="fixed bottom-4 right-4 rounded-full h-12 w-12 "
+            className="fixed bottom-4 right-4 [&_svg]:size-5 h-10 w-10"
           >
-            <ChatCircleDotsIcon size={24} />
+            <ChatCircleDotsIcon />
           </Button>
         </DialogTrigger>
         <DialogContent className="p-0 sm:max-w-2xl max-h-[90vh] h-full [&>button]:hidden">
@@ -130,7 +130,6 @@ export default function ChatBot() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="rounded-full size-8"
                   onClick={() => setOpen(false)}
                 >
                   <XIcon className="size-4" />
