@@ -16,24 +16,24 @@ import {
   SiPeerlist,
   SiNuxt,
 } from "react-icons/si";
-import { FaVuejs, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaVuejs, FaXTwitter } from "react-icons/fa6";
 import { IoLogoCss3, IoLogoLinkedin } from "react-icons/io5";
 
 export const SOCIAL_LINKS = [
   {
-    name: "Peerlist",
-    url: "https://peerlist.io/rohitjuyal",
-    icon: "/socials/peerlist.png",
-  },
-  {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/rohitjuyal2003",
-    icon: "/socials/linkedin.png",
+    icon: FaLinkedin,
   },
   {
     name: "GitHub",
     url: "https://github.com/rohitjuyal21",
-    icon: "/socials/github.png",
+    icon: FaGithub,
+  },
+  {
+    name: "Peerlist",
+    url: "https://peerlist.io/rohitjuyal",
+    icon: SiPeerlist,
   },
 ];
 
@@ -170,16 +170,16 @@ export const PROJECTS = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Redux Toolkit"],
     thumbnai: "/projects/roast-my-idea-thumbnail.png",
   },
-  {
-    name: "FaviGrab",
-    description:
-      "FaviGrab is a React web app that makes downloading favicons easy. Enter a URL, choose a size, and download high-quality favicons using integrated APIs.",
-    logo: "/projects/favigrab-logo.svg",
-    github: "https://github.com/rohitjuyal21/favi-grab-client",
-    live: "https://favi-grab.vercel.app/",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Shadcn UI", "Node.js"],
-    thumbnai: "/projects/roast-my-idea-thumbnail.png",
-  },
+  // {
+  //   name: "FaviGrab",
+  //   description:
+  //     "FaviGrab is a React web app that makes downloading favicons easy. Enter a URL, choose a size, and download high-quality favicons using integrated APIs.",
+  //   logo: "/projects/favigrab-logo.svg",
+  //   github: "https://github.com/rohitjuyal21/favi-grab-client",
+  //   live: "https://favi-grab.vercel.app/",
+  //   tech: ["React", "TypeScript", "Tailwind CSS", "Shadcn UI", "Node.js"],
+  //   thumbnai: "/projects/roast-my-idea-thumbnail.png",
+  // },
   {
     name: "Focus Hours",
     description:

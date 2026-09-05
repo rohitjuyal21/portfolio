@@ -1,27 +1,36 @@
-import clsx from "clsx";
-import React from "react";
+import * as React from "react"
+import { cva, type VariantProps } from "class-variance-authority"
 
-export default function Badge({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
-  className?: string;
-}) {
+import { cn } from "@/lib/utils"
+
+const badgeVariants = cva(
+  "inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  {
+    variants: {
+      variant: {
+        default:
+          "border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80",
+        secondary:
+          "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        destructive:
+          "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
+        outline: "text-foreground",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+)
+
+export interface BadgeProps
+  extends React.HTMLAttributes<HTMLDivElement>,
+    VariantProps<typeof badgeVariants> {}
+
+function Badge({ className, variant, ...props }: BadgeProps) {
   return (
-    <div
-      className={clsx(
-        "relative group flex gap-1 items-center px-1.5 py-0.5 bg-muted text-xs font-medium",
-        className
-      )}
-    >
-      <div className="absolute inset-0">
-        <span className="block absolute bg-sky-500/50 h-px w-[calc(100%+8px)] top-0 left-1/2 -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-        <span className="block absolute bg-sky-500/50 w-px h-[calc(100%+8px)] right-0 top-1/2 -translate-y-1/2 scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></span>
-        <span className="block absolute bg-sky-500/50 h-px w-[calc(100%+8px)] bottom-0 left-1/2 -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-        <span className="block absolute bg-sky-500/50 w-px h-[calc(100%+8px)] left-0 top-1/2 -translate-y-1/2 scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></span>
-      </div>
-      {children}
-    </div>
-  );
+    <div className={cn(badgeVariants({ variant }), className)} {...props} />
+  )
 }
+
+export { Badge, badgeVariants }
